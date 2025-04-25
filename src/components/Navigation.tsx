@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Youtube } from "lucide-react";
+import { Facebook, Instagram, Youtube, Guitar } from "lucide-react";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,7 +21,8 @@ const Navigation = () => {
     }`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <a href="/" className="font-title text-2xl font-semibold text-gray-900 hover:text-primary transition-colors">
+          <a href="/" className="flex items-center gap-2 font-title text-2xl font-semibold text-gray-900 hover:text-primary transition-colors">
+            <Guitar className="h-6 w-6" />
             Pedro Cantalice
           </a>
           <div className="hidden md:flex items-center space-x-6">
