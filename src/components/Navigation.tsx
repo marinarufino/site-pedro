@@ -40,7 +40,7 @@ const Navigation = () => {
                 <a href="#eventos" className="font-body">Eventos</a>
               </Button>
               <Button variant="ghost" asChild>
-                <a href="#midia" className="font-body">Mídia</a>
+                <a href="/fotos" className="font-body">Fotos</a>
               </Button>
               <Button variant="ghost" asChild>
                 <a href="#contato" className="font-body">Contato</a>

@@ -1,5 +1,5 @@
 import Navigation from "@/components/Navigation";
-import { Guitar, Music, BookOpen, Mail } from "lucide-react";
+import { Guitar, Music, BookOpen, Mail, Image } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
@@ -152,16 +152,38 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Mídia Section */}
-      <section id="midia" className="py-20">
+      {/* Fotos Section */}
+      <section id="fotos" className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="font-title text-4xl font-bold text-gray-900 mb-8 text-center">
-            Mídia
+            Fotos
           </h2>
-          <div className="max-w-3xl mx-auto">
-            <p className="font-body text-gray-600 mb-6 leading-relaxed">
-              Vídeos, entrevistas e outras aparições na mídia.
-            </p>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <img
+                src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9"
+                alt="Preview 1"
+                className="w-full aspect-[4/3] object-cover rounded-lg shadow-md"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1721322800607-8c38375eef04"
+                alt="Preview 2"
+                className="w-full aspect-[4/3] object-cover rounded-lg shadow-md"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1472396961693-142e6e269027"
+                alt="Preview 3"
+                className="w-full aspect-[4/3] object-cover rounded-lg shadow-md"
+              />
+            </div>
+            <div className="text-center">
+              <Button asChild size="lg">
+                <a href="/fotos">
+                  <Image className="mr-2" />
+                  Ver todas as fotos
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
