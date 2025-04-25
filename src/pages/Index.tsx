@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import { Guitar, Music, BookOpen, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,29 +7,39 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      {/* Hero Section */}
+      {/* Hero Section with Photo Space */}
       <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-primary/10 to-transparent">
-        <div className="container mx-auto text-center">
-          <Guitar className="w-16 h-16 mx-auto mb-6 text-primary animate-fade-in" />
-          <h1 className="font-title text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
-            Pedro Cantalice
-          </h1>
-          <p className="font-body text-xl text-gray-600 max-w-2xl mx-auto mb-8 animate-fade-in">
-            Músico, Cavaquinista e Pesquisador
-          </p>
-          <div className="flex justify-center gap-4">
-            <Button asChild>
-              <a href="#musica">
-                <Music className="mr-2" />
-                Música
-              </a>
-            </Button>
-            <Button variant="outline" asChild>
-              <a href="#pesquisa">
-                <BookOpen className="mr-2" />
-                Pesquisa
-              </a>
-            </Button>
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="text-center md:text-left">
+              <Guitar className="w-16 h-16 mb-6 text-primary animate-fade-in md:mx-0 mx-auto" />
+              <h1 className="font-title text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
+                Pedro Cantalice
+              </h1>
+              <p className="font-body text-xl text-gray-600 mb-8 animate-fade-in">
+                Músico, Cavaquinista e Pesquisador
+              </p>
+              <div className="flex justify-center md:justify-start gap-4">
+                <Button asChild>
+                  <a href="#musica">
+                    <Music className="mr-2" />
+                    Música
+                  </a>
+                </Button>
+                <Button variant="outline" asChild>
+                  <a href="#pesquisa">
+                    <BookOpen className="mr-2" />
+                    Pesquisa
+                  </a>
+                </Button>
+              </div>
+            </div>
+            <div className="rounded-lg overflow-hidden shadow-xl bg-gray-100 aspect-[4/5] animate-fade-in">
+              {/* Placeholder for Pedro's photo */}
+              <div className="w-full h-full flex items-center justify-center text-gray-400">
+                Espaço para foto
+              </div>
+            </div>
           </div>
         </div>
       </section>
