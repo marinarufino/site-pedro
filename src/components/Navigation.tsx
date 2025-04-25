@@ -1,13 +1,26 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b">
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${
+      isScrolled ? 'bg-white/90 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+    }`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <a href="/" className="font-title text-2xl font-semibold text-gray-900">
+          <a href="/" className="font-title text-2xl font-semibold text-gray-900 hover:text-primary transition-colors">
             Pedro Cantalice
           </a>
           <div className="hidden md:flex space-x-8">
