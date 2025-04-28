@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import { Guitar, Music, BookOpen, Mail, Image } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -12,20 +13,24 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="flex flex-col items-center gap-8">
             <div className="w-full max-w-2xl aspect-[4/3] rounded-lg overflow-hidden shadow-xl bg-gray-100">
-              {/* Placeholder for Pedro's photo */}
-              <div className="w-full h-full flex items-center justify-center text-gray-400">
-                Espaço para foto
-              </div>
+              {/* Substituindo o placeholder pela imagem */}
+              <img src="/fotopedro.jpg" alt="Foto de Pedro Cantalice" className="w-full h-full object-cover" />
             </div>
             <div className="text-center">
               <h1 className="font-title text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
                 Pedro Cantalice
               </h1>
               <p className="font-body text-xl text-gray-600 mb-8 animate-fade-in">
-                Músico, Cavaquinista e Pesquisador
+                Cavaquinista e Pesquisador
               </p>
               <div className="flex justify-center gap-4">
                 <Button asChild>
+                  <a href="#musica">
+                    <Music className="mr-2" />
+                    Música
+                  </a>
+                </Button>
+                <Button variant="outline" asChild>
                   <a href="#musica">
                     <Music className="mr-2" />
                     Música
