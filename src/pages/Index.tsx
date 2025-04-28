@@ -11,7 +11,7 @@ const Index = () => {
     {/* Hero Section - Widescreen */}
 <section className="pt-20 pb-10 px-0 bg-gradient-to-b from-primary/10 to-transparent">
   <div className="w-full max-w-none px-0">
-    <div className="flex flex-col items-center gap-6">
+    <div className="flex flex-col items-center gap-14">
       
       {/* Imagem com largura completa */}
       <div className="w-full aspect-[4/3] sm:aspect-[16/4.5] overflow-hidden shadow-2xl bg-gray-100">
