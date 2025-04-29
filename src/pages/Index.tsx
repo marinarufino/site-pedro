@@ -98,7 +98,18 @@ const Index = () => {
             </div>
             <div className="bg-gray-100 rounded-lg overflow-hidden">
               <div className="aspect-video w-full bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-500">Vídeo ou imagem sobre a pesquisa</span>
+                <span className="text-gray-500"><div className="flex justify-center my-8">
+                  <iframe
+                    className="rounded-xl shadow-lg"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/-BYulTbo3FY"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div></span>
               </div>
             </div>
           </div>
@@ -121,13 +132,16 @@ const Index = () => {
                 <div className="aspect-square bg-gray-100">
                   {/* Album Cover Placeholder */}
                   <div className="w-full h-full flex items-center justify-center text-gray-400">
-                    Capa do Álbum 1
+                    <img 
+                    src="\capasimages\imgteste.jpg" 
+                    alt="capa - teste"
+                    className="w-full h-full object-cover" />
                   </div>
                 </div>
                 <div className="p-4">
-                  <h3 className="font-title text-xl font-semibold mb-2">Título da Música 1</h3>
+                  <h3 className="font-title text-xl font-semibold mb-2">Choro Carinhoso - Pedro Cantalice</h3>     
                   <audio className="w-full" controls>
-                    <source src="#" type="audio/mpeg" />
+                    <source src="\audio\musicateste.wav" type="audio/wav" />
                     Seu navegador não suporta o elemento de áudio.
                   </audio>
                 </div>
@@ -137,13 +151,16 @@ const Index = () => {
                 <div className="aspect-square bg-gray-100">
                   {/* Album Cover Placeholder */}
                   <div className="w-full h-full flex items-center justify-center text-gray-400">
-                    Capa do Álbum 2
+                    <img 
+                    src="\capasimages\capaalbum2.jpg" 
+                    alt="capa2"
+                    className="w-full h-full object-cover" />
                   </div>
                 </div>
                 <div className="p-4">
-                  <h3 className="font-title text-xl font-semibold mb-2">Título da Música 2</h3>
+                  <h3 className="font-title text-xl font-semibold mb-2">Nem ela nem eu - Alma Carioca</h3>
                   <audio className="w-full" controls>
-                    <source src="#" type="audio/mpeg" />
+                    <source src="\audio\nemelanemeu.mp3" type="audio/mpeg" />
                     Seu navegador não suporta o elemento de áudio.
                   </audio>
                 </div>
@@ -153,13 +170,16 @@ const Index = () => {
                 <div className="aspect-square bg-gray-100">
                   {/* Album Cover Placeholder */}
                   <div className="w-full h-full flex items-center justify-center text-gray-400">
-                    Capa do Álbum 3
+                    <img 
+                    src="\capasimages\capaalbum3.jpeg" 
+                    alt="capa 3"
+                    className="w-full h-full object-cover" />
                   </div>
                 </div>
                 <div className="p-4">
-                  <h3 className="font-title text-xl font-semibold mb-2">Título da Música 3</h3>
+                  <h3 className="font-title text-xl font-semibold mb-2">Amigos do samba - Pedro Cantalice</h3>
                   <audio className="w-full" controls>
-                    <source src="#" type="audio/mpeg" />
+                    <source src="\audio\amigosdosamba.mp3" type="audio/mpeg" />
                     Seu navegador não suporta o elemento de áudio.
                   </audio>
                 </div>
@@ -212,37 +232,37 @@ const Index = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
               <div className="col-span-2 row-span-2">
                 <img
-                  src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9"
+                  src="/images/pedro8.jpeg"
                   alt="Preview 1"
-                  className="w-full h-full object-cover rounded-lg shadow-md"
+                  className="w-full h-full object-cover rounded-lg shadow-md" 
                 />
               </div>
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1721322800607-8c38375eef04"
+                  src="/images/pedro7.jpeg"
                   alt="Preview 2"
-                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                  className="w-full h-100 object-cover object-center rounded-lg shadow-md"
                 />
               </div>
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1472396961693-142e6e269027"
+                  src="/images/pedro6.jpeg"
                   alt="Preview 3"
-                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                  className="w-full h-100 object-cover object-center rounded-lg shadow-md"
                 />
               </div>
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1472396961693-142e6e269027"
+                  src="/images/pedro5.jpg"
                   alt="Preview 4"
-                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                  className="w-full h-100 object-cover object-center rounded-lg shadow-md"
                 />
               </div>
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1472396961693-142e6e269027"
+                  src="/images/pedro1.jpeg"
                   alt="Preview 5"
-                  className="w-full aspect-square object-cover rounded-lg shadow-md"
+                  className="w-full h-100 object-cover object-center rounded-lg shadow-md"
                 />
               </div>
             </div>

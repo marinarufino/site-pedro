@@ -47,10 +47,10 @@ const Navigation = () => {
               </Button>
             </div>
             <div className="flex items-center space-x-4 ml-6 border-l pl-6">
-              <a href="https://www.facebook.com/pedrocantalice" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/pedro.cantalice.9" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="https://www.instagram.com/pedrocantalice" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
+              <a href="https://www.instagram.com/pedrocantalice8" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
                 <Instagram size={20} />
               </a>
               <a href="https://www.youtube.com/pedrocantalice" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
